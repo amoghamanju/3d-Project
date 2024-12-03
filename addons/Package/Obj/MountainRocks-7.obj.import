@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d2hvt5ain405h"
+path="res://.godot/imported/MountainRocks-7.obj-7e2bfac2aff0ff4f8081d88553feef49.mesh"
+
+[deps]
+
+files=["res://.godot/imported/MountainRocks-7.obj-7e2bfac2aff0ff4f8081d88553feef49.mesh"]
+
+source_file="res://addons/Package/Obj/MountainRocks-7.obj"
+dest_files=["res://.godot/imported/MountainRocks-7.obj-7e2bfac2aff0ff4f8081d88553feef49.mesh", "res://.godot/imported/MountainRocks-7.obj-7e2bfac2aff0ff4f8081d88553feef49.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

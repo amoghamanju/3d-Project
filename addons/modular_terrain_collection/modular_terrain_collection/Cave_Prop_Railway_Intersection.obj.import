@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4vkyjdp67463"
+path="res://.godot/imported/Cave_Prop_Railway_Intersection.obj-74f21529908a107ad759f4f4b67bfeb2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cave_Prop_Railway_Intersection.obj-74f21529908a107ad759f4f4b67bfeb2.mesh"]
+
+source_file="res://addons/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Railway_Intersection.obj"
+dest_files=["res://.godot/imported/Cave_Prop_Railway_Intersection.obj-74f21529908a107ad759f4f4b67bfeb2.mesh", "res://.godot/imported/Cave_Prop_Railway_Intersection.obj-74f21529908a107ad759f4f4b67bfeb2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

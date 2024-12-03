@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkw7736twg3vr"
+path="res://.godot/imported/Cave_Prop_Railway_Curve_Small.obj-54a6191416a3cb46cf019ad6e18b419b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cave_Prop_Railway_Curve_Small.obj-54a6191416a3cb46cf019ad6e18b419b.mesh"]
+
+source_file="res://addons/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Railway_Curve_Small.obj"
+dest_files=["res://.godot/imported/Cave_Prop_Railway_Curve_Small.obj-54a6191416a3cb46cf019ad6e18b419b.mesh", "res://.godot/imported/Cave_Prop_Railway_Curve_Small.obj-54a6191416a3cb46cf019ad6e18b419b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

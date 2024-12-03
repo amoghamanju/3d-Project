@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://baaln6w4gc2vr"
+path="res://.godot/imported/Grass_2.obj-451048ac872b9978579da53a5b16425d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Grass_2.obj-451048ac872b9978579da53a5b16425d.mesh"]
+
+source_file="res://addons/Ultimate Nature Pack by Quaternius/OBJ/Grass_2.obj"
+dest_files=["res://.godot/imported/Grass_2.obj-451048ac872b9978579da53a5b16425d.mesh", "res://.godot/imported/Grass_2.obj-451048ac872b9978579da53a5b16425d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

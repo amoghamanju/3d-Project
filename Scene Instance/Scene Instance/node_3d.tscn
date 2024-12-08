@@ -1,0 +1,222 @@
+[gd_scene load_steps=40 format=3 uid="uid://5u1p5bslg4x7"]
+
+[ext_resource type="Script" path="res://Scripts/node_3d.gd" id="1_mrlvy"]
+[ext_resource type="Script" path="res://Scripts/score.gd" id="2_alotp"]
+[ext_resource type="Texture2D" uid="uid://15ot6di145m5" path="res://images/forest image.jpg" id="2_i2apd"]
+[ext_resource type="Script" path="res://Scripts/xr_origin_3d.gd" id="2_j434k"]
+[ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="2_o7q1s"]
+[ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="3_5dvmv"]
+[ext_resource type="Script" path="res://Scripts/left_controller.gd" id="3_b5ss6"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="3_cblo8"]
+[ext_resource type="PackedScene" uid="uid://bxm1ply47vaan" path="res://addons/godot-xr-tools/functions/movement_climb.tscn" id="4_sqti7"]
+[ext_resource type="PackedScene" uid="uid://ceqxqcafy4jc7" path="res://Score.tscn" id="5_ryhgx"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="5_wbfxr"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="7_l3wag"]
+[ext_resource type="Script" path="res://Scripts/right_controller.gd" id="7_xs0ji"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="8_k1m8q"]
+[ext_resource type="PackedScene" uid="uid://ckt118vcpmr6q" path="res://addons/godot-xr-tools/functions/movement_physical_jump.tscn" id="11_rblh7"]
+[ext_resource type="PackedScene" uid="uid://yagy78qjmjcq" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/cloud_big.gltf" id="14_kb8oo"]
+[ext_resource type="PackedScene" uid="uid://1adw7vovx6co" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/cloud_small.gltf" id="15_342xy"]
+[ext_resource type="PackedScene" uid="uid://d3spo565ee028" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_A.gltf" id="16_g55b7"]
+[ext_resource type="PackedScene" uid="uid://c7v3lxrloovsl" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_A_trees.gltf" id="17_yjn8r"]
+[ext_resource type="PackedScene" uid="uid://da542irehcdcb" path="res://Scene Instance/road.tscn" id="19_7p6jv"]
+[ext_resource type="PackedScene" uid="uid://c6fp6htvrfesy" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_D.gltf" id="20_sjxx4"]
+[ext_resource type="PackedScene" uid="uid://ce0r51gtp6wc0" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_C.gltf" id="21_f7g04"]
+[ext_resource type="PackedScene" uid="uid://bfogcnlwh45od" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_C_trees.gltf" id="22_1aiif"]
+[ext_resource type="PackedScene" uid="uid://cc1ic4te7n2bt" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_cut.gltf" id="23_kq8m8"]
+[ext_resource type="PackedScene" uid="uid://dpmm5qbwrypm6" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_large.gltf" id="24_quo1w"]
+[ext_resource type="PackedScene" uid="uid://du7m8ryi3lm7p" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_B_cut.gltf" id="26_ee356"]
+[ext_resource type="PackedScene" uid="uid://5acrm4kb32jc" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_A_small.gltf" id="27_6dkrq"]
+[ext_resource type="PackedScene" uid="uid://c2v24sfgynjvf" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/trees_B_large.gltf" id="28_2e8a4"]
+[ext_resource type="PackedScene" uid="uid://dqw84obykpska" path="res://addons/Ultimate Nature Pack by Quaternius/FBX/BirchTree_Dead_2.fbx" id="29_h1085"]
+[ext_resource type="PackedScene" uid="uid://s44gi2w4hd7w" path="res://addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hills_B.gltf" id="29_ymvaw"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="30_xomay"]
+[ext_resource type="PackedScene" uid="uid://b0al6uyn1qjlh" path="res://Scene Instance/cactus_flowers_2.tscn" id="30_xy2ei"]
+[ext_resource type="PackedScene" uid="uid://buo2e1sl1kd4j" path="res://addons/Ultimate Nature Pack by Quaternius/FBX/Corn_1.fbx" id="32_2upeh"]
+[ext_resource type="AudioStream" uid="uid://l8tipj3i88nk" path="res://Sound/Collection.wav" id="33_dgjmv"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gdb3k"]
+radius = 0.05
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ibebw"]
+panorama = ExtResource("2_i2apd")
+
+[sub_resource type="Sky" id="Sky_e6flc"]
+sky_material = SubResource("PanoramaSkyMaterial_ibebw")
+
+[sub_resource type="Environment" id="Environment_1nn5u"]
+background_mode = 2
+sky = SubResource("Sky_e6flc")
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u6bnh"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1.00088, 0, 0, 0, 1.00088, 0, 0, 0, 1.00088, 0, -0.16603, 19.5788)
+script = ExtResource("1_mrlvy")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+script = ExtResource("2_j434k")
+left_hand_node_path = NodePath("LeftController")
+right_hand_node_path = NodePath("RightController")
+main_camera_path = NodePath("XRCamera3D")
+forward_direction_node_path = NodePath("forward_direction_node")
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(-0.991457, 0.0424237, 0.115999, 0.0440934, 0.998077, 0.0118502, -0.115375, 0.0168786, -0.992293, 0, 2.74741, -40.2491)
+
+[node name="Viewport2Din3D" parent="XROrigin3D/XRCamera3D" instance=ExtResource("30_xomay")]
+transform = Transform3D(-0.00993203, 0.00044171, -0.00115578, 0.000424984, 0.00999834, 0.000169083, 0.00116204, 0.000118711, -0.0099404, 0.249213, 17.041, -64.3944)
+visible = false
+screen_size = Vector2(700, 600)
+scene = ExtResource("5_ryhgx")
+viewport_size = Vector2(200, 300)
+scene_properties_keys = PackedStringArray()
+
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+script = ExtResource("3_b5ss6")
+
+[node name="LeftHand" parent="XROrigin3D/LeftController" instance=ExtResource("2_o7q1s")]
+
+[node name="MovementClimb" parent="XROrigin3D/LeftController" instance=ExtResource("4_sqti7")]
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftController" instance=ExtResource("5_wbfxr")]
+
+[node name="MovementPhysicalJump" parent="XROrigin3D/LeftController" instance=ExtResource("11_rblh7")]
+
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+script = ExtResource("7_xs0ji")
+
+[node name="RightHand" parent="XROrigin3D/RightController" instance=ExtResource("3_5dvmv")]
+
+[node name="MovementDirect" parent="XROrigin3D/RightController" instance=ExtResource("3_cblo8")]
+
+[node name="MovementClimb" parent="XROrigin3D/RightController" instance=ExtResource("4_sqti7")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightController" instance=ExtResource("5_wbfxr")]
+
+[node name="MovementTurn" parent="XROrigin3D/RightController" instance=ExtResource("7_l3wag")]
+
+[node name="Area3D" type="Area3D" parent="XROrigin3D/RightController"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/RightController/Area3D"]
+shape = SubResource("SphereShape3D_gdb3k")
+
+[node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("8_k1m8q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50.1383)
+
+[node name="forward_direction_node" type="Node3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -37.1629)
+
+[node name="Score" type="Node3D" parent="XROrigin3D"]
+script = ExtResource("2_alotp")
+
+[node name="Collection" type="AudioStreamPlayer3D" parent="XROrigin3D/Score"]
+transform = Transform3D(0.999121, 0, 0, 0, 0.999121, 0, 0, 0, 0.999121, 0, 0, 0)
+stream = ExtResource("33_dgjmv")
+
+[node name="Sprite3D" type="Sprite3D" parent="XROrigin3D/Score"]
+billboard = 1
+
+[node name="SubViewport" type="SubViewport" parent="XROrigin3D/Score/Sprite3D"]
+transparent_bg = true
+size = Vector2i(1920, 512)
+
+[node name="ProgressBar" type="ProgressBar" parent="XROrigin3D/Score/Sprite3D/SubViewport"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -50.0
+offset_right = 500.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+step = 1.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1nn5u")
+camera_attributes = SubResource("CameraAttributesPractical_u6bnh")
+
+[node name="cloud_big2" parent="WorldEnvironment" instance=ExtResource("14_kb8oo")]
+transform = Transform3D(1.00088, 0, 0, 0, 1.00088, 0, 0, 0, 1.00088, 6.11883, 39.5171, -1.38323)
+
+[node name="cloud_small2" parent="WorldEnvironment" instance=ExtResource("15_342xy")]
+transform = Transform3D(1.00088, 0, 0, 0, 1.00088, 0, 0, 0, 1.00088, -10.9865, 39.6821, 28.6595)
+
+[node name="hills_A2" parent="WorldEnvironment" instance=ExtResource("16_g55b7")]
+transform = Transform3D(1.00088, 0, 0, 0, 1.00088, 0, 0, 0, 1.00088, 5.74455, 0.377319, 20.1099)
+visible = false
+
+[node name="hills_A_trees2" parent="WorldEnvironment" instance=ExtResource("17_yjn8r")]
+transform = Transform3D(1.00088, 0, 0, 0, 1.00088, 0, 0, 0, 1.00088, -3.40595, 0.431615, 24.3033)
+visible = false
+
+[node name="Node3D" parent="WorldEnvironment" instance=ExtResource("19_7p6jv")]
+transform = Transform3D(-4.37499e-08, 0, 1.00088, 0, 1.00088, 0, -1.00088, 0, -4.37499e-08, 0, -0.16603, 19.5788)
+
+[node name="hex_road_D2" parent="WorldEnvironment" instance=ExtResource("20_sjxx4")]
+transform = Transform3D(54.5837, 0, 25.4528, 0, 60.2265, 0, -25.4528, 0, 54.5837, 6.94875, 4.36294, 239.544)
+
+[node name="hills_C2" parent="WorldEnvironment" instance=ExtResource("21_f7g04")]
+transform = Transform3D(20.7053, 0, 0, 0, 22.8701, 0, 0, 0, 19.6582, 40.0352, -10.1748, 31.237)
+
+[node name="hills_C_trees2" parent="WorldEnvironment" instance=ExtResource("22_1aiif")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, -30.0264, -0.16603, 10.8461)
+
+[node name="trees_A_cut2" parent="WorldEnvironment" instance=ExtResource("23_kq8m8")]
+transform = Transform3D(30.0264, 0, 0, 0, 30.0264, 0, 0, 0, 30.0264, -4.00352, -3.16867, 79.6316)
+
+[node name="trees_A_large2" parent="WorldEnvironment" instance=ExtResource("24_quo1w")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, 34.8905, -0.166037, -5.18247)
+
+[node name="trees_A_large3" parent="WorldEnvironment" instance=ExtResource("24_quo1w")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, -31.3821, -0.16603, 137.017)
+
+[node name="trees_B_cut2" parent="WorldEnvironment" instance=ExtResource("26_ee356")]
+transform = Transform3D(20.2592, 0, 0, 0, 20.2592, 0, 0, 0, 20.2592, 10.0088, -3.15966, 135.453)
+
+[node name="trees_A_small2" parent="WorldEnvironment" instance=ExtResource("27_6dkrq")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, 37.5983, -0.166044, 129.012)
+
+[node name="trees_A_small3" parent="WorldEnvironment" instance=ExtResource("27_6dkrq")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, 30.381, -0.16603, 103.134)
+
+[node name="trees_A_large4" parent="WorldEnvironment" instance=ExtResource("24_quo1w")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, -29.4327, -0.166044, 112.321)
+
+[node name="trees_A_large5" parent="WorldEnvironment" instance=ExtResource("24_quo1w")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, -27.532, -0.16603, 192.505)
+
+[node name="trees_A_large6" parent="WorldEnvironment" instance=ExtResource("24_quo1w")]
+transform = Transform3D(20.0085, 0, 0, 0, 20.0085, 0, 0, 0, 20.0085, 28.0277, -0.16603, 47.5888)
+
+[node name="trees_B_large2" parent="WorldEnvironment" instance=ExtResource("28_2e8a4")]
+transform = Transform3D(20.0168, 0, 0, 0, 20.0168, 0, 0, 0, 20.0168, -30.0264, -0.16603, 46.4174)
+
+[node name="hills_B2" parent="WorldEnvironment" instance=ExtResource("29_ymvaw")]
+transform = Transform3D(20.0176, 0, 0, 0, 20.0176, 0, 0, 0, 20.0176, 27.3652, -0.16603, 171.28)
+
+[node name="BirchTree_Dead_2" parent="WorldEnvironment" instance=ExtResource("29_h1085")]
+transform = Transform3D(-0.235805, 10.006, 0, -10.006, -0.235805, 0, 0, 0, 10.0088, -9.30788, -2.33694, 41.4651)
+
+[node name="CactusFlowers_3" parent="WorldEnvironment" instance=ExtResource("30_xy2ei")]
+transform = Transform3D(1.00088, 0, 0, 0, 1.00088, 0, 0, 0, 1.00088, 0, -2.12988, 24.179)
+
+[node name="Node3D2" parent="WorldEnvironment" instance=ExtResource("19_7p6jv")]
+transform = Transform3D(-4.37659e-08, -0.0320952, 1.00125, -1.40292e-09, 1.00125, 0.0320952, -1.00176, 0, -4.37884e-08, 0.233604, -0.120471, 123.168)
+
+[node name="CactusFlowers_4" parent="WorldEnvironment" instance=ExtResource("30_xy2ei")]
+transform = Transform3D(1.00176, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 4.095, -2.13, 48.379)
+
+[node name="Corn_1" parent="WorldEnvironment" instance=ExtResource("32_2upeh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50157, 0, 13.3081)
+
+[connection signal="area_entered" from="XROrigin3D/RightController/Area3D" to="XROrigin3D/Score" method="_on_area_3d_area_entered"]

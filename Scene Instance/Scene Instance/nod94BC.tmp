@@ -1,0 +1,93 @@
+[gd_scene load_steps=21 format=3 uid="uid://5u1p5bslg4x7"]
+
+[ext_resource type="Script" path="res://Scripts/node_3d.gd" id="1_mrlvy"]
+[ext_resource type="Texture2D" uid="uid://15ot6di145m5" path="res://images/forest image.jpg" id="2_i2apd"]
+[ext_resource type="Script" path="res://Scene Instance/xr_origin_3d.gd" id="2_j434k"]
+[ext_resource type="PackedScene" uid="uid://bq86r4yll8po" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_fullglove_low.tscn" id="2_o7q1s"]
+[ext_resource type="PackedScene" uid="uid://xqimcf20s2jp" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_fullglove_low.tscn" id="3_5dvmv"]
+[ext_resource type="Script" path="res://Scene Instance/left_controller.gd" id="3_b5ss6"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="3_cblo8"]
+[ext_resource type="PackedScene" uid="uid://bxm1ply47vaan" path="res://addons/godot-xr-tools/functions/movement_climb.tscn" id="4_sqti7"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="5_wbfxr"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="7_l3wag"]
+[ext_resource type="PackedScene" uid="uid://cjyilbm4ucc7s" path="res://addons/godot-xr-tools/objects/climbable.tscn" id="7_pwvup"]
+[ext_resource type="Script" path="res://Scene Instance/right_controller.gd" id="7_xs0ji"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="8_k1m8q"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_apquj"]
+panorama = ExtResource("2_i2apd")
+
+[sub_resource type="Sky" id="Sky_i1tdu"]
+sky_material = SubResource("PanoramaSkyMaterial_apquj")
+
+[sub_resource type="Environment" id="Environment_1nn5u"]
+background_mode = 2
+sky = SubResource("Sky_i1tdu")
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u6bnh"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wawbd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hoxam"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i7c68"]
+size = Vector3(10, 1, 10)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.16603, 0)
+script = ExtResource("1_mrlvy")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+script = ExtResource("2_j434k")
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+script = ExtResource("3_b5ss6")
+
+[node name="LeftHand" parent="XROrigin3D/LeftController" instance=ExtResource("2_o7q1s")]
+
+[node name="MovementDirect" parent="XROrigin3D/LeftController" instance=ExtResource("3_cblo8")]
+
+[node name="MovementClimb" parent="XROrigin3D/LeftController" instance=ExtResource("4_sqti7")]
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftController" instance=ExtResource("5_wbfxr")]
+
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+script = ExtResource("7_xs0ji")
+
+[node name="RightHand" parent="XROrigin3D/RightController" instance=ExtResource("3_5dvmv")]
+
+[node name="MovementDirect" parent="XROrigin3D/RightController" instance=ExtResource("3_cblo8")]
+
+[node name="MovementClimb" parent="XROrigin3D/RightController" instance=ExtResource("4_sqti7")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightController" instance=ExtResource("5_wbfxr")]
+
+[node name="MovementTurn" parent="XROrigin3D/RightController" instance=ExtResource("7_l3wag")]
+
+[node name="PlayerBody" parent="XROrigin3D" instance=ExtResource("8_k1m8q")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1nn5u")
+camera_attributes = SubResource("CameraAttributesPractical_u6bnh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_wawbd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_hoxam")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_i7c68")
+
+[node name="Climbable" parent="." instance=ExtResource("7_pwvup")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0352259, 0.970456, 0.0255954)

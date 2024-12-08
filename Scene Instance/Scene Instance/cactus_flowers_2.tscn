@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0al6uyn1qjlh"]
+
+[ext_resource type="PackedScene" uid="uid://dsw0rnw3akp1b" path="res://addons/Ultimate Nature Pack by Quaternius/FBX/CactusFlowers_2.fbx" id="1_xxx3d"]
+[ext_resource type="Script" path="res://Scene Instance/cactus_flowers_2.gd" id="2_8w1w6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ituba"]
+radius = 0.003
+height = 0.02
+
+[node name="CactusFlowers_2" instance=ExtResource("1_xxx3d")]
+script = ExtResource("2_8w1w6")
+
+[node name="Area3D" type="Area3D" parent="CactusFlowers_2" index="0"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="CactusFlowers_2/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -8.16788e-10, 0.00685171)
+shape = SubResource("CapsuleShape3D_ituba")
+
+[connection signal="area_entered" from="CactusFlowers_2/Area3D" to="." method="_on_area_3d_area_entered"]

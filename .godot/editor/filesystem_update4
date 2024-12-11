@@ -1,0 +1,8 @@
+res://Scene Instance/node_3d.tscn
+res://openxr_action_map.tres
+res://addons/godot-xr-tools/hands/animations/left/hand_blend_tree.tres
+res://addons/godot-xr-tools/hands/animations/right/hand_blend_tree.tres
+res://Scene Instance/road2.tscn
+res://Scene Instance/road.tscn
+res://addons/godot-xr-tools/player/player_body.tscn
+res://Scene Instance/cactus_flowers_2.tscn

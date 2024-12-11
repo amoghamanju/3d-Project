@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jqy43fpxsc4v"
+path="res://.godot/imported/Willow_Dead_Snow_3.obj-459c00adf1b145c130d1f83baf7f22e3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Willow_Dead_Snow_3.obj-459c00adf1b145c130d1f83baf7f22e3.mesh"]
+
+source_file="res://addons/Ultimate Nature Pack by Quaternius/OBJ/Willow_Dead_Snow_3.obj"
+dest_files=["res://.godot/imported/Willow_Dead_Snow_3.obj-459c00adf1b145c130d1f83baf7f22e3.mesh", "res://.godot/imported/Willow_Dead_Snow_3.obj-459c00adf1b145c130d1f83baf7f22e3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

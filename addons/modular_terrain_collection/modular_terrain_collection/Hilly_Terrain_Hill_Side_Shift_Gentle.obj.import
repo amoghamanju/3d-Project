@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo8sn38t8ch45"
+path="res://.godot/imported/Hilly_Terrain_Hill_Side_Shift_Gentle.obj-6fd42baf962845fd4ecdbfc071f1d05b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Terrain_Hill_Side_Shift_Gentle.obj-6fd42baf962845fd4ecdbfc071f1d05b.mesh"]
+
+source_file="res://addons/modular_terrain_collection/modular_terrain_collection/Hilly_Terrain_Hill_Side_Shift_Gentle.obj"
+dest_files=["res://.godot/imported/Hilly_Terrain_Hill_Side_Shift_Gentle.obj-6fd42baf962845fd4ecdbfc071f1d05b.mesh", "res://.godot/imported/Hilly_Terrain_Hill_Side_Shift_Gentle.obj-6fd42baf962845fd4ecdbfc071f1d05b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

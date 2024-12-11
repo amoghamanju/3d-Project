@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://v7b2k200l8er"
+path="res://.godot/imported/Hilly_Prop_Flower_Lily_Blue.obj-153a99c31c63c43de4d6b4eaa33235bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Flower_Lily_Blue.obj-153a99c31c63c43de4d6b4eaa33235bf.mesh"]
+
+source_file="res://addons/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Flower_Lily_Blue.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Flower_Lily_Blue.obj-153a99c31c63c43de4d6b4eaa33235bf.mesh", "res://.godot/imported/Hilly_Prop_Flower_Lily_Blue.obj-153a99c31c63c43de4d6b4eaa33235bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
